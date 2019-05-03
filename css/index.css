@@ -176,6 +176,11 @@ a {
   padding: 15px;
   background-color: #F6F6F6;
 }
+@media (max-width: 500px) {
+  .navbar {
+    width: 100%;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -199,6 +204,14 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .hidden {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
 }
 .home .space-images img {
   width: 28%;
