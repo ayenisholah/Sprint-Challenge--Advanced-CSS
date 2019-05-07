@@ -3,11 +3,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>SpaceWalkers</title>
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet/less" type="text/css" href="less/index.less" />
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -15,13 +17,28 @@
 </head>
 
 <body>
+  
 
  <!-- navigation code here -->
+ <header class="navbar">
+   <div><h1>SpaceWalkers</h1></div>
+   <div>
+     <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="#">Sign In</a>
+     </nav>
+   </div>
+    
+  </header>
 
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
+       <img id ="main-header" src="img/main-header.png" alt="SpaceWalkers">
 
       <h2>Lift Off</h2>
     
@@ -30,8 +47,8 @@
 
     <section class="space-images">
         <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+        <img src="img/sky.png" class="sky hidden" alt="Space sky image">
+        <img src="img/launch.png" class="launch hidden" alt="Launching rocket">
     </section>
    
     <section class="visit-planets">
