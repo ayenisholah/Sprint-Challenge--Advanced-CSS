@@ -1,14 +1,23 @@
 // Mixins Here
-.full-width {
-    width: 100%;
-}
 
 .center() {
     justify-content: center;
     text-align: center;
 }
-.flex(@justify, @align) {
+
+.flex(@flex-direction: row, @just-content: space-evenly, @align-items: stretch) {
     display: flex;
-    justify-content: @justify;
-    align-items: @align;
+    flex-direction: @flex-direction;
+    justify-content: @just-content;
+    align-items: @align-items;
+}
+
+.btn-style(@padding,@FontSize,@BorderRadius,@width,@BgColor,@text,@color) {
+    padding: @padding;
+    font-size: @FontSize;
+    border-radius: @BorderRadius;
+    width: @width;
+    background-color: @BgColor;
+    text-align: @textalign;
+    color: @color;
 }

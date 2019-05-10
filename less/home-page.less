@@ -3,7 +3,7 @@
 .home {
 
   #main-header {
-    .full-width()
+    width: 100%;
   }
 
   .intro {
@@ -24,15 +24,15 @@
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    .full-width();
+    width: 100%;
 
     @media @phone {
-      .hidden{
+      .hidden {
         display: none;
       }
 
-      .blast{
-        .full-width()
+      .blast {
+        width: 100%;
       }
     }
 
@@ -64,11 +64,11 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    .flex(center, center);
+    .flex(row, center,stretch);
 
     @media @phone {
-      display: flex;
-      flex-direction: column-reverse;
+      padding: 50px 0px;
+      .flex(column-reverse);
     }
 
     .walk-text {
@@ -76,7 +76,7 @@
       width: 50%;
 
     @media @phone {
-      .full-width();
+      width: 100%;
     }
 
       h3 {
@@ -88,20 +88,15 @@
       }
 
       .btn {
-        padding: 10px;
-        font-size: @largeFontSize;
-        border-radius: 10px;
-        background-color: @btn-bg-color;
-        color: white;
-        text-align: center;
-        width: 120px;
+        .btn-style(10px,@largeFontSize,10px,120px,@btn-bg-color,center,white);
         cursor: pointer;
         &:hover { 
-            background-color: lighten(@btn-bg-color, 20%);
+            background-color: lighten(@btn-bg-color, 50%);
+            
         }
 
         @media @phone {
-          .full-width();
+          width: 100%;
           border-radius: 5px;
         }
       }
@@ -112,13 +107,11 @@
       margin-left: 4%;
 
     @media @phone {
-      .full-width();
-      // width: 100%;
+      width: 100%;
     }
       
       img {
-        .full-width();
-        // width: 100%;
+        width: 100%;
         height: auto;
         border-radius: 10px;
       }

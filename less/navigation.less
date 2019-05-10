@@ -1,19 +1,13 @@
 // Navigation code here
 .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    .flex(column,center);
     h1 {
-        justify-content: center;
-        text-align: center;
+        .center();
     }
     nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        .flex(row,center,baseline);
         ul {
-            display: flex;
-            flex-direction: row;
+            .flex(row,center,baseline);
         }
     }
     padding: 15px;
