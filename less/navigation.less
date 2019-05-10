@@ -1,12 +1,24 @@
 // Navigation code here
 .navbar {
-    .center();
-    // justify-content: center;
-    // text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        justify-content: center;
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        ul {
+            display: flex;
+            flex-direction: row;
+        }
+    }
     padding: 15px;
     background-color: @nav-bg;
     @media @phone {
-        // width: 100%;
         .full-width();
     }
 }
