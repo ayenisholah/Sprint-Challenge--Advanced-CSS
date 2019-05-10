@@ -1,12 +1,18 @@
 // Navigation code here
 .navbar {
-    .center();
-    // justify-content: center;
-    // text-align: center;
+    .flex(column,center);
+    h1 {
+        .center();
+    }
+    nav {
+        .flex(row,center,baseline);
+        ul {
+            .flex(row,center,baseline);
+        }
+    }
     padding: 15px;
     background-color: @nav-bg;
     @media @phone {
-        // width: 100%;
         .full-width();
     }
 }
